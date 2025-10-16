@@ -120,6 +120,10 @@ After this run the html file
 - Click "Apply" to filter all KPIs, charts, and tables.
 - Click "Clear Date Filter" to reset to the full dataset.
 
+### Video Walkthrough
+Watch the video walkthrough to see how to set it up
+[Demo Video](https://youtu.be/YoKBXUAnNJk)
+
 
 ## Documentation
 
