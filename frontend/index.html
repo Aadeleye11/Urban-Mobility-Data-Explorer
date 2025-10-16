@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Train Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h2>Train Analytics Dashboard</h2>
+    <div class="filter-panel">
+    <button id="clearDateBtn">Clear Date Filter</button>
+        <label>Start date: <input type="date" id="filterStart" min="2016-01-01" max="2016-06-30" value="2016-01-01"></label>
+        <label>End date: <input type="date" id="filterEnd" min="2016-01-01" max="2016-06-30" value="2016-06-30"></label>
+        <button id="filterBtn">Apply</button>
+      </div>
+      
+    <div class="kpi-cards">
+        <div class="kpi-card" id="kpi-total-trips"></div>
+        <div class="kpi-card" id="kpi-avg-distance"></div>
+        <div class="kpi-card" id="kpi-avg-duration"></div>
+        <div class="kpi-card" id="kpi-avg-passengers"></div>
+    </div>
+
+    <div class="charts">
+        <div>
+            <canvas id="lineTripsByDay" height="200"></canvas>
+            <div id="tableTripsByDay"></div>
+        </div>
+        <div>
+            <canvas id="barTripsHourVendor" height="200"></canvas>
+            <div id="tableTripsHourVendor"></div>
+        </div>
+        <div>
+            <canvas id="barAvgSpeedHourVendor" height="200"></canvas>
+            <div id="tableAvgSpeedHourVendor"></div>
+        </div>
+        <div>
+            <canvas id="pieVendorShare" height="40", width="40"></canvas>
+            <div id="tableTripsByVendor"></div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

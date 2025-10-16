@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 32px;
+    background: #121829;
+    color: #efefef;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+
+  .filter-panel {
+    margin: 32px auto 12px auto;
+    padding: 15px 22px 16px 22px;
+    background: #192137;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+  }
+  
+  .filter-panel label {
+    font-size: 1.05em;
+    color: #eee;
+  }
+  .filter-panel input[type="date"] {
+    background: #232d44; color: #f1c40f;
+    border: none; border-radius: 6px;
+    padding: 5px 8px;
+  }
+  
+  .filter-panel button {
+    background: #FFD600; color: #111;
+    font-weight: bold;
+    border: none; border-radius: 6px; padding: 7px 17px;
+    cursor: pointer; margin-left: 10px;
+    transition: box-shadow .11s;
+  }
+  .filter-panel button:hover { box-shadow: 0 0 8px #FFD60099; }
+  
+  
+  .kpi-cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2.5em;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .kpi-card {
+    background: #182342;
+    color: #fff;
+    box-shadow: 0 2px 16px rgba(34,71,151,0.18);
+    border-radius: 16px;
+    padding: 2.4em 2.2em;
+    min-width: 200px;
+    min-height: 100px;
+    text-align: center;
+    font-size: 1.17em;
+    transition: box-shadow .18s, filter .18s;
+  }
+  .kpi-vendor-values {
+    font-size: 1.8sem;  
+    font-weight: light;
+    margin-bottom: 0.2em;
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+  }
+  
+  .kpi-vendor1 { color: #4DA8F7; }
+  .kpi-vendor2 { color: #FFB300; }
+  .kpi-card strong {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.2em;
+  }
+
+  .kpi-card:hover {
+    box-shadow: 0 0 0 4px #1976d280, 0 4px 24px #181d28b8;
+    z-index: 1;
+    transition: box-shadow .24s, filter .16s;
+    cursor: pointer;
+  }
+
+  .charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+  }
+  .charts>div {
+    background: #fff;
+    border-radius: 10px;
+    margin: 16px;
+    padding: 18px;
+    box-shadow: 0 2px 12px rgba(120,120,170,0.07);
+    flex: 1 1 420px;
+    min-width: 360px;
+    max-width: 500px;
+  }
+  
