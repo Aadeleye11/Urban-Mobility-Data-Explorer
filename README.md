@@ -62,27 +62,52 @@ It supports vendor comparison, daily/hourly breakdowns, and flexible date filter
 - pip
 - SQLite3
 
+### Clone or Download Project
+```
+git clone https://github.com/Aadeleye11/Urban-Mobility-Data-Explorer.git
+```
+
+### Optional: Create a Virtual Environment in Python
+**Windows:**
+```
+python -m venv yourenv
+yourenv\Scripts\activate
+```
+
+**macOS/Linux:**
+```
+python3 venv yourenv
+source yourenv/bin/activate
+```
+
+### Data Cleaning
+
+Navigate to the backend directory, run the cleaning file to clean the train.csv file
+```
+cd backend
+python cleaning.py
+```
+
+The cleaned csv file is then accessed by db_setup.py that create the DB using sqlite3 connector and loads the cleaned csv file to the database file (train.db)
+```
+python db_setup.py
+```
+
 ### Backend Setup
+Load the DB file from the db_setup.py file and integrate into the flask app
 ```
 cd backend
 pip install -r requirements.txt
-sqlite3 ../db/sample.db < db_schema.sql
-python app.py
+python app.py # Make sure db_setup.py is in the file
 ```
 
-
 ### Frontend Setup
+
 ```
 cd frontend
 python -m http.server 8080
 ```
-
-
-
-
-
-
-
+After this run the html file 
 
 ## Usage
 
