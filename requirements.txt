@@ -1,0 +1,7 @@
+flask_cors
+math
+csv
+flask
+datetime
+Chart.js
+SQLite
