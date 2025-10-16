@@ -40,7 +40,7 @@ def haversine_distance(lat1, lon1, lat2, lon2):
         return None
 
 # Load raw CSV file
-filename = r"C:\Users\asade\Downloads\SUMMATIVE\train.csv"
+filename ="C:train.csv"
 data = []
 with open(filename, newline='', encoding='utf-8') as csvfile:
     reader = csv.DictReader(csvfile)
