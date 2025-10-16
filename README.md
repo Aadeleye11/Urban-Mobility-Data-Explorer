@@ -80,6 +80,11 @@ python3 venv yourenv
 source yourenv/bin/activate
 ```
 
+### Install Dependencies
+```
+pip install -r requirements.txt
+```
+
 ### Data Cleaning
 
 Navigate to the backend directory, run the cleaning file to clean the train.csv file
