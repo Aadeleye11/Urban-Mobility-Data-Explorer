@@ -30,7 +30,7 @@ def setup_and_import():
     cursor.execute("SELECT COUNT(*) FROM train_trips")
     if cursor.fetchone()[0] == 0:
         def parse_datetime(dt_str):
-            return datetime.strptime(dt_str.strip(), "%d/%m/%Y %H:%M").strftime("%Y-%m-%d %H:%M")
+            return datetime.strptime(dt_str.strip(), "%Y-%m-%d %H:%M:%S").strftime("%Y-%m-%d %H:%M")
         with open("train_cleaned.csv", newline='', encoding='utf-8') as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
